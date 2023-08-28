@@ -56,6 +56,10 @@
             });
         })
         
+        // socket.on('connect', () => {
+        //     console.log("CONECTADO")
+        // })
+        
         socket.on('message-from-server', (data) => {
             // console.log(data)
             mensajes.innerHTML += `<li>${data.msg}</li>`;
